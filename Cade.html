@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Profile Card Hover Animation | CodingNepal</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="container">
+         <div class="wrapper">
+            <a href="#">
+               <img src="Fiver.jpg" alt="">
+            </a>
+            <div class="title">
+               Md. Wasek
+            </div>
+            <div class="place">
+               Dhaka, Bangladesh
+            </div>
+         </div>
+         <div class="content">
+            <p>
+               User Interface Designer and <br>front-end developer
+            </p>
+            <div class="buttons">
+               <div class="btn">
+                  <a href="https://www.facebook.com/md.wasek.507">
+                  <button>Message</button>
+                  </a>
+               </div>
+               <div class="btn">
+                  <a href="https://www.instagram.com/md.wasek/">
+                  <button>Following</button>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="icons">
+            <li><a href="https://www.facebook.com/md.wasek.507"><span class="fab fa-facebook-f"></span></a></li>
+            <li><a href="https://twitter.com/wasek_md"><span class="fab fa-twitter"></span></a></li>
+            <li><a href="https://www.instagram.com/md.wasek/"><span class="fab fa-instagram"></span></a></li>
+         </div>
+      </div>
+      <script>
+         const img = document.querySelector("img");
+         const icons = document.querySelector(".icons");
+         img.onclick = function(){
+           this.classList.toggle("active");
+           icons.classList.toggle("active");
+         }
+      </script>
+   </body>
+</html>
